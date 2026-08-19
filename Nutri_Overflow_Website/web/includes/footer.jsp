@@ -1,0 +1,1483 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!-- 
+    NutriOverflow - Modern Responsive Footer Component
+    Hotline: 0896612861
+-->
+<footer class="nutri-footer">
+    <div class="footer-top-wave"></div>
+    <div class="container footer-container">
+        <div class="row g-4 footer-grid">
+            
+            <!-- Column 1: Brand & Commitment -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="footer-brand-wrap">
+                    <div class="footer-logo">
+                        <img src="${pageContext.request.contextPath}/image/logonutrioverflow.jpg" alt="NutriOverflow Logo" onerror="this.style.display='none'">
+                        <span class="footer-brand-text">Nutri<span class="brand-accent">Overflow</span></span>
+                    </div>
+                    <p class="footer-tagline">Thực phẩm bổ sung & Dinh dưỡng thể hình cao cấp chính hãng Việt Nam. Đồng hành cùng sức khỏe và vóc dáng của bạn.</p>
+                    
+                    <!-- Authentic Guarantee Badge -->
+                    <div class="authentic-badge">
+                        <div class="badge-icon">🛡️</div>
+                        <div class="badge-content">
+                            <span class="badge-title">CAM KẾT CHÍNH HÃNG</span>
+                            <span class="badge-desc">100% nhập khẩu, phát hiện hàng giả đền gấp đôi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 2: Information & Policies -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <h5 class="footer-heading">Chính sách mua hàng</h5>
+                <ul class="footer-links">
+                    <li><a href="#" onclick="alert('Chính sách đổi trả hàng: Lỗi 1 đổi 1 trong vòng 7 ngày nếu sản phẩm có lỗi từ nhà sản xuất hoặc bị móp méo do quá trình vận chuyển. Hàng đổi trả phải còn nguyên tem mác, chưa qua sử dụng.'); return false;"><i class="fas fa-chevron-right me-2"></i>Chính sách đổi trả</a></li>
+                    <li><a href="#" onclick="alert('Chính sách giao hàng: Miễn phí vận chuyển cho đơn hàng từ 500k. Giao hàng hỏa tốc trong nội thành 2h. Các tỉnh thành khác giao nhận trong 1 - 3 ngày làm việc.'); return false;"><i class="fas fa-chevron-right me-2"></i>Chính sách vận chuyển</a></li>
+                    <li><a href="#" onclick="alert('Chính sách bảo mật: NutriOverflow cam kết bảo mật tuyệt đối thông tin cá nhân và thông tin giao dịch của khách hàng. Không chia sẻ thông tin cho bên thứ ba ngoại trừ đối tác giao nhận.'); return false;"><i class="fas fa-chevron-right me-2"></i>Chính sách bảo mật thông tin</a></li>
+                    <li><a href="#" onclick="alert('Điều khoản dịch vụ: Bằng việc sử dụng website, khách hàng đồng ý với các quy định về mua bán, thanh toán trực tuyến và bản quyền hình ảnh sản phẩm của cửa hàng.'); return false;"><i class="fas fa-chevron-right me-2"></i>Điều khoản dịch vụ</a></li>
+                    <li><a href="don-hang"><i class="fas fa-chevron-right me-2"></i>Tra cứu đơn hàng</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Operating Hours -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <h5 class="footer-heading">Giờ làm việc & Hỗ trợ</h5>
+                <ul class="footer-info-list">
+                    <li>
+                        <i class="fas fa-clock text-brand"></i>
+                        <div>
+                            <strong>Thời gian mở cửa:</strong>
+                            <p class="m-0 text-muted">08:00 AM - 10:00 PM</p>
+                            <p class="m-0 text-muted">(Cả tuần bao gồm Thứ 7 & CN)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-headset text-brand"></i>
+                        <div>
+                            <strong>Hotline đặt hàng:</strong>
+                            <p class="m-0"><a href="tel:0896612861" class="footer-phone-link">0896.612.861</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope text-brand"></i>
+                        <div>
+                            <strong>Email hỗ trợ:</strong>
+                            <p class="m-0 text-muted">support@nutrioverflow.com</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Store Locations -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <h5 class="footer-heading">Hệ thống cửa hàng</h5>
+                <ul class="footer-info-list">
+                    <li>
+                        <i class="fas fa-map-marker-alt text-brand"></i>
+                        <div>
+                            <strong>Chi nhánh TP. HCM:</strong>
+                            <p class="m-0 text-muted">123 Nguyễn Huệ, Quận 1, TP. HCM</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt text-brand"></i>
+                        <div>
+                            <strong>Chi nhánh Hà Nội:</strong>
+                            <p class="m-0 text-muted">45 Cầu Giấy, Q. Cầu Giấy, Hà Nội</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt text-brand"></i>
+                        <div>
+                            <strong>Chi nhánh Đà Nẵng:</strong>
+                            <p class="m-0 text-muted">78 Lê Duẩn, Q. Hải Châu, Đà Nẵng</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <hr class="footer-divider">
+
+        <!-- Bottom Footer -->
+        <div class="row align-items-center footer-bottom pb-4">
+            <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
+                <p class="m-0 copyright-text">© 2026 <strong>NutriOverflow</strong>. Thiết kế bởi đội ngũ Advanced Agentic Coding. Tất cả quyền được bảo lưu.</p>
+            </div>
+            <div class="col-12 col-md-6 text-center text-md-end">
+                <!-- Payment methods icons -->
+                <div class="payment-methods">
+                    <span class="payment-title me-2 text-muted">Chấp nhận thanh toán:</span>
+                    <i class="fab fa-cc-visa" title="Visa Card"></i>
+                    <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                    <i class="fab fa-cc-jcb" title="JCB Card"></i>
+                    <i class="fas fa-money-bill-wave" title="Thanh toán COD"></i>
+                    <span class="badge bg-brand text-dark fw-bold px-2" style="font-size: 0.65rem;">VNPay QR</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- ── AI CHAT BOX FLOAT BUTTON ── -->
+<button id="btnOpenAIChat" class="btn-ai-chat shadow" title="Hỏi Trợ lý AI NutriBot">
+    <div class="bubble-icon">
+        <i class="fas fa-robot"></i>
+    </div>
+    <span class="chat-ripple"></span>
+</button>
+
+<!-- ── FLOATING ACTION CONTACT POPOVER WIDGET ── -->
+<div class="contact-widget-container">
+    <!-- Popover Menu -->
+    <div id="contactPopover" class="contact-popover d-none">
+        <div class="popover-title">Liên hệ hỗ trợ trực tiếp</div>
+        <div class="popover-items">
+            <!-- Option 1: Zalo -->
+            <a href="https://zalo.me/0896612861" target="_blank" class="popover-item">
+                <div class="item-icon icon-zalo">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 22px; height: 22px;">
+                        <path d="M24 4C12.95 4 4 11.83 4 21.5C4 26.68 6.55 31.29 10.7 34.4L8.5 42.5C8.3 43.2 9 43.8 9.7 43.5L18.8 39.5C20.5 40.5 22.2 41 24 41C35.05 41 44 33.17 44 23.5C44 13.83 35.05 4 24 4ZM27.6 15.5H16.4C15.6 15.5 15 14.9 15 14.1C15 13.3 15.6 12.7 16.4 12.7H27.6C28.4 12.7 29 13.3 29 14.1C29 14.9 28.4 15.5 27.6 15.5ZM32.6 24.3H16.4C15.6 24.3 15 23.7 15 22.9C15 22.1 15.6 21.5 16.4 21.5H32.6C33.4 21.5 34 22.1 34 22.9C34 23.7 33.4 24.3 32.6 24.3ZM32.6 33.1H16.4C15.6 33.1 15 32.5 15 31.7C15 30.9 15.6 30.3 16.4 30.3H32.6C33.4 30.3 34 30.9 34 31.7C34 32.5 33.4 33.1 32.6 33.1Z" fill="white"/>
+                    </svg>
+                </div>
+                <div class="item-text">Chat qua Zalo (0896.612.861)</div>
+            </a>
+            <!-- Option 2: Phone -->
+            <a href="tel:0896612861" class="popover-item">
+                <div class="item-icon icon-phone"><i class="fas fa-phone-alt"></i></div>
+                <div class="item-text">Gọi điện hotline (0896.612.861)</div>
+            </a>
+        </div>
+    </div>
+    <button id="contactToggleBtn" class="contact-toggle-btn shadow" title="Liên hệ tư vấn">
+        <i class="fas fa-comments" id="contactToggleIcon"></i>
+    </button>
+</div>
+
+<!-- Scroll to Top bubble -->
+<button id="btnScrollToTop" class="btn-scroll-top" title="Cuộn về đầu trang" style="display: none;">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- ── AI CHAT BOX POPUP WINDOW (GLASSMORPHISM) ── -->
+<div id="aiChatWindow" class="ai-chat-window d-none">
+    <div class="chat-header">
+        <div class="d-flex align-items-center">
+            <div class="ai-avatar">
+                <i class="fas fa-robot"></i>
+                <span class="active-dot"></span>
+            </div>
+            <div class="ms-2">
+                <h6 class="chat-title mb-0">Trợ lý AI NutriBot</h6>
+                <small id="chatStatusText" class="chat-subtitle">Tự động trả lời 24/7</small>
+            </div>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+            <button id="btnMaximizeAIChat" class="btn-maximize-chat" title="Phóng to / Thu nhỏ"><i class="fas fa-expand-alt" id="maximizeIcon"></i></button>
+            <button id="btnCloseAIChat" class="btn-close-chat" title="Đóng cửa sổ"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+    
+    <div id="aiChatBody" class="chat-body">
+        <!-- Messages load dynamically -->
+    </div>
+    
+    <div class="chat-footer">
+        <div class="input-group">
+            <input type="text" id="aiChatInput" class="form-control chat-input" placeholder="Nhập tin nhắn..." maxlength="1000">
+            <button id="btnSendAIChat" class="btn btn-send"><i class="fas fa-paper-plane"></i></button>
+        </div>
+        <div class="chat-footer-brand">Trợ lý ảo thông minh • NutriOverflow</div>
+    </div>
+</div>
+
+<!-- ── FOOTER CSS STYLING (MODERN & RESPONSIVE) ── -->
+<style>
+/* ── FOOTER MAIN STYLES ── */
+.nutri-footer {
+    background-color: #080810;
+    color: #cbd5e1;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    padding-top: 4.5rem;
+    position: relative;
+    border-top: 3px solid rgba(0, 230, 118, 0.4);
+    overflow: hidden;
+}
+
+.footer-top-wave {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 5px;
+    background: linear-gradient(90deg, #00e676 0%, #00c853 100%);
+    box-shadow: 0 4px 15px rgba(0, 230, 118, 0.35);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ── BRAND COLUMN ── */
+.footer-brand-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 2px solid #00e676;
+    object-fit: cover;
+}
+
+.footer-brand-text {
+    font-size: 1.25rem;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+
+.footer-brand-text .brand-accent {
+    color: #00e676;
+}
+
+.footer-tagline {
+    font-size: 0.86rem;
+    color: #b8c5d6;
+    line-height: 1.65;
+    margin: 0;
+}
+
+/* ── GUARANTEE BADGE ── */
+.authentic-badge {
+    background: rgba(0, 230, 118, 0.05);
+    border: 1px dashed rgba(0, 230, 118, 0.3);
+    border-radius: 12px;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 0.5rem;
+}
+
+.badge-icon {
+    font-size: 1.6rem;
+    line-height: 1;
+}
+
+.badge-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.badge-title {
+    font-size: 0.76rem;
+    font-weight: 800;
+    color: #00e676;
+    letter-spacing: 0.5px;
+}
+
+.badge-desc {
+    font-size: 0.7rem;
+    color: #d1dae8;
+    line-height: 1.35;
+}
+
+/* ── HEADING & LINKS ── */
+.footer-heading {
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.footer-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 35px; height: 2px;
+    background-color: #00e676;
+    border-radius: 2px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0; margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.footer-links li a {
+    color: #b8c5d6;
+    text-decoration: none;
+    font-size: 0.87rem;
+    font-weight: 500;
+    transition: all 0.25s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer-links li a:hover {
+    color: #00e676;
+    transform: translateX(4px);
+}
+
+/* ── INFORMATION & LOCATIONS ── */
+.footer-info-list {
+    list-style: none;
+    padding: 0; margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.footer-info-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 0.87rem;
+    line-height: 1.55;
+    color: #b8c5d6;
+}
+
+.footer-info-list li i {
+    font-size: 0.95rem;
+    margin-top: 3px;
+    color: #00e676;
+    width: 15px;
+    text-align: center;
+}
+
+.footer-info-list li strong {
+    color: #fff;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.footer-phone-link {
+    color: #00e676;
+    font-weight: 800;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-phone-link:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    margin: 2.5rem 0 1.8rem;
+}
+
+/* ── BOTTOM FOOTER ── */
+.copyright-text {
+    font-size: 0.78rem;
+    color: #8fa3bb;
+    line-height: 1.5;
+}
+
+/* Override Bootstrap text-muted inside footer for better contrast */
+.nutri-footer .text-muted {
+    color: #a8baca !important;
+}
+
+.payment-methods {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.payment-title {
+    font-size: 0.78rem;
+    color: #a8baca;
+}
+
+.payment-methods i {
+    font-size: 1.4rem;
+    color: #b8c5d6;
+    transition: color 0.2s;
+}
+
+.payment-methods i:hover {
+    color: #fff;
+}
+
+.bg-brand {
+    background-color: #00e676;
+}
+
+/* ── CONTACT WIDGET CONTAINER & POPOVER (MODERN GLASSMORPHISM & SLICK) ── */
+.contact-widget-container {
+    position: fixed;
+    bottom: 2rem;
+    right: 1.5rem;
+    z-index: 99999;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.contact-toggle-btn {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #00e676, #00c853);
+    border: none;
+    color: #0b0f19;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(0, 230, 118, 0.4);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    z-index: 3;
+}
+
+.contact-toggle-btn:hover {
+    transform: scale(1.08) rotate(5deg);
+    box-shadow: 0 6px 24px rgba(0, 230, 118, 0.55);
+}
+
+.contact-popover {
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    width: 320px;
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1.5px solid rgba(0, 230, 118, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    padding: 1.2rem;
+    animation: popoverFadeIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    z-index: 2;
+}
+
+@keyframes popoverFadeIn {
+    from { opacity: 0; transform: translateY(15px) scale(0.95); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.contact-popover::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    right: 20px;
+    border-width: 8px 8px 0;
+    border-style: solid;
+    border-color: rgba(15, 23, 42, 0.95) transparent;
+    display: block;
+    width: 0;
+}
+
+.popover-title {
+    font-size: 0.84rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 12px;
+    line-height: 1.4;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 8px;
+}
+
+.popover-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.popover-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 10px;
+    text-decoration: none !important;
+    transition: all 0.2s ease;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.popover-item:hover {
+    transform: translateX(4px);
+    background: rgba(0, 230, 118, 0.08);
+    border-color: rgba(0, 230, 118, 0.2);
+}
+
+.item-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.icon-ai {
+    background-color: #0084ff;
+}
+
+.icon-zalo {
+    background-color: #0068ff;
+}
+
+.icon-phone {
+    background-color: #00e676;
+    color: #0b0f19 !important;
+}
+
+.item-text {
+    font-size: 0.84rem;
+    font-weight: 600;
+    color: #e2e8f0;
+    transition: color 0.2s;
+}
+
+.popover-item:hover .item-text {
+    color: #00e676;
+}
+
+/* Independent Scroll to Top Button Placement */
+.btn-scroll-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 5.5rem; /* Positioned left of the contact widget */
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: rgba(15, 23, 42, 0.95);
+    border: 1.5px solid rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+    z-index: 9999;
+}
+
+.btn-scroll-top:hover {
+    background-color: #00e676;
+    border-color: #00e676;
+    color: #0a0a12;
+    transform: scale(1.08);
+}
+
+/* ── AI CHAT BUBBLE & WINDOW STYLES (NEON GREEN & BLACK THEME) ── */
+.btn-ai-chat {
+    position: fixed;
+    bottom: 6rem;
+    right: 1.5rem;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: rgba(15, 23, 42, 0.95);
+    border: 1.5px solid #00e676;
+    color: #00e676;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 230, 118, 0.25);
+    transition: all 0.3s ease;
+    z-index: 99999;
+}
+
+.btn-ai-chat:hover {
+    background: #00e676;
+    color: #0b0f19;
+    box-shadow: 0 6px 22px rgba(0, 230, 118, 0.5);
+    transform: scale(1.08);
+}
+
+.chat-ripple {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; height: 100%;
+    border-radius: 50%;
+    border: 2px solid #00e676;
+    z-index: 1;
+    opacity: 0.8;
+    animation: chatRipplePulse 1.8s infinite ease-out;
+    pointer-events: none;
+}
+
+@keyframes chatRipplePulse {
+    0% { transform: translate(-50%, -50%) scale(0.95); opacity: 0.8; }
+    100% { transform: translate(-50%, -50%) scale(1.6); opacity: 0; }
+}
+
+/* ── RESPONSIVE MOBILE ADJUSTMENTS ── */
+@media (max-width: 768px) {
+    .nutri-footer {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+    .footer-heading {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    .footer-divider {
+        margin: 2rem 0 1.2rem;
+    }
+    .payment-methods {
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .contact-widget-container {
+        bottom: 1.5rem;
+        right: 1rem;
+    }
+    .btn-ai-chat {
+        bottom: 5.5rem;
+        right: 1rem;
+    }
+    .btn-scroll-top {
+        bottom: 1.5rem;
+        right: 5rem;
+    }
+}
+
+/* Glassmorphism Chat Window */
+.ai-chat-window {
+    position: fixed;
+    bottom: 5.5rem;
+    right: 1.5rem;
+    width: 360px;
+    height: 500px;
+    background: rgba(10, 15, 26, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 230, 118, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 12px 40px rgba(0, 230, 118, 0.15);
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    animation: chatWindowOpen 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transition: all 0.3s ease;
+}
+
+@keyframes chatWindowOpen {
+    from { transform: translateY(20px) scale(0.92); opacity: 0; }
+    to { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+/* Header */
+.ai-chat-window .chat-header {
+    padding: 1rem;
+    background: linear-gradient(135deg, #020617, #0f172a);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #00e676;
+}
+
+.ai-avatar {
+    position: relative;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(0, 230, 118, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
+    color: #00e676;
+    border: 1.5px solid rgba(0, 230, 118, 0.4);
+}
+
+.ai-avatar .active-dot {
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    width: 10px;
+    height: 10px;
+    background-color: #00e676;
+    border-radius: 50%;
+    border: 1.5px solid #0f172a;
+    animation: pulseGreen 2s infinite;
+}
+
+@keyframes pulseGreen {
+    0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 230, 118, 0.7); }
+    70% { transform: scale(1); box-shadow: 0 0 0 5px rgba(0, 230, 118, 0); }
+    100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 230, 118, 0); }
+}
+
+.chat-title {
+    font-weight: 700;
+    font-size: 0.92rem;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+}
+
+.chat-subtitle {
+    font-size: 0.72rem;
+    color: #00e676;
+    display: block;
+}
+
+.btn-close-chat, .btn-maximize-chat {
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: color 0.2s;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-close-chat:hover, .btn-maximize-chat:hover {
+    color: #00e676;
+}
+
+/* Maximized Chat Window (Centered on Screen) */
+.ai-chat-window.maximized {
+    width: 80%;
+    height: 92%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: auto;
+    right: auto;
+    max-width: 1400px;
+    max-height: 960px;
+    z-index: 100000;
+}
+@media (max-width: 768px) {
+    .ai-chat-window.maximized {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: none;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+    }
+}
+
+/* Presentation enhancements for Maximized state (larger text & spacings) */
+.ai-chat-window.maximized .chat-title {
+    font-size: 1.25rem !important;
+}
+.ai-chat-window.maximized .chat-subtitle {
+    font-size: 0.9rem !important;
+}
+.ai-chat-window.maximized .chat-msg-bubble {
+    font-size: 1.25rem !important;
+    line-height: 1.6 !important;
+    padding: 12px 18px !important;
+    border-radius: 12px !important;
+}
+.ai-chat-window.maximized .chat-bubble-system {
+    font-size: 1.05rem !important;
+    padding: 8px 16px !important;
+}
+.ai-chat-window.maximized .chat-input {
+    font-size: 1.2rem !important;
+    height: 52px !important;
+}
+.ai-chat-window.maximized .btn-send {
+    font-size: 1.25rem !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+}
+.ai-chat-window.maximized .chat-footer-brand {
+    font-size: 0.8rem !important;
+}
+
+/* Chat Body */
+.ai-chat-window .chat-body {
+    flex-grow: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    background: rgba(10, 15, 26, 0.3);
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0,230,118,0.1) transparent;
+}
+
+.ai-chat-window .chat-body::-webkit-scrollbar {
+    width: 4px;
+}
+.ai-chat-window .chat-body::-webkit-scrollbar-thumb {
+    background: rgba(0, 230, 118, 0.2);
+    border-radius: 4px;
+}
+
+/* Messages */
+.chat-msg-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.chat-msg-row.align-self-end {
+    align-items: flex-end;
+}
+
+.chat-msg-row.align-self-start {
+    align-items: flex-start;
+}
+
+.chat-msg-label {
+    font-size: 0.66rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 2px;
+    padding: 0 4px;
+}
+
+.chat-msg-bubble {
+    max-width: 82%;
+    padding: 0.6rem 0.85rem;
+    border-radius: 14px;
+    font-size: 0.84rem;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+.chat-bubble-customer {
+    background: linear-gradient(135deg, #00c853, #00e676);
+    color: #0b0f19;
+    font-weight: 500;
+    border-bottom-right-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0,230,118,0.25);
+}
+
+.chat-bubble-ai {
+    background: rgba(30, 41, 59, 0.7);
+    color: #f1f5f9;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom-left-radius: 2px;
+}
+
+.chat-bubble-staff {
+    background: rgba(15, 23, 42, 0.9);
+    color: #ffffff;
+    border: 1.5px solid #00e676;
+    border-bottom-left-radius: 2px;
+    box-shadow: 0 2px 10px rgba(0, 230, 118, 0.1);
+}
+
+.chat-bubble-system {
+    align-self: center;
+    background: rgba(0, 230, 118, 0.08);
+    color: #00e676;
+    font-size: 0.74rem;
+    font-style: italic;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 90%;
+    border: 1px solid rgba(0, 230, 118, 0.15);
+}
+
+/* Typing Indicator */
+.typing-indicator {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0.6rem 0.85rem;
+    background: rgba(30, 41, 59, 0.7);
+    border-radius: 14px;
+    border-bottom-left-radius: 2px;
+    width: fit-content;
+}
+
+.typing-dot {
+    width: 6px;
+    height: 6px;
+    background-color: #00e676;
+    border-radius: 50%;
+    animation: bounceDot 1.4s infinite ease-in-out both;
+}
+
+.typing-dot:nth-child(1) { animation-delay: -0.32s; }
+.typing-dot:nth-child(2) { animation-delay: -0.16s; }
+
+@keyframes bounceDot {
+    0%, 80%, 100% { transform: scale(0); }
+    40% { transform: scale(1.0); }
+}
+
+/* Footer Input */
+.ai-chat-window .chat-footer {
+    padding: 0.85rem;
+    background: rgba(10, 15, 26, 0.98);
+    border-top: 1px solid rgba(0, 230, 118, 0.15);
+}
+
+.chat-input {
+    background: rgba(15, 23, 42, 0.8) !important;
+    border: 1px solid rgba(0, 230, 118, 0.15) !important;
+    color: #ffffff !important;
+    font-size: 0.84rem !important;
+    border-radius: 10px 0 0 10px !important;
+}
+
+.chat-input:focus {
+    box-shadow: none !important;
+    border-color: #00e676 !important;
+}
+
+.chat-input::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-send {
+    background: #00e676 !important;
+    border: 1px solid #00e676 !important;
+    color: #0b0f19 !important;
+    border-radius: 0 10px 10px 0 !important;
+    transition: all 0.2s !important;
+}
+
+.btn-send:hover {
+    background: #00ff88 !important;
+    border-color: #00ff88 !important;
+}
+
+.chat-footer-brand {
+    font-size: 0.65rem;
+    text-align: center;
+    color: rgba(0, 230, 118, 0.4);
+    margin-top: 6px;
+    letter-spacing: 0.3px;
+}
+
+@media (max-width: 480px) {
+    .ai-chat-window {
+        width: 90%;
+        height: 80%;
+        bottom: 1rem;
+        right: 5%;
+    }
+}
+</style>
+
+<!-- ── FOOTER JAVASCRIPT CONTROLLERS ── -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var btnScrollTop = document.getElementById("btnScrollToTop");
+    
+    // Show/Hide Scroll-to-top button based on scroll depth
+    window.addEventListener("scroll", function() {
+        if (window.pageYOffset > 300) {
+            btnScrollTop.style.display = "flex";
+        } else {
+            btnScrollTop.style.display = "none";
+        }
+    });
+    
+    // Smooth Scroll to top action
+    if (btnScrollTop) {
+        btnScrollTop.addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    }
+    
+    /* ============================================================
+       CONTACT POPOVER & AI CHAT BOT CONTROLLER
+       ============================================================ */
+    var contactToggleBtn = document.getElementById("contactToggleBtn");
+    var contactToggleIcon = document.getElementById("contactToggleIcon");
+    var contactPopover = document.getElementById("contactPopover");
+    
+    var btnOpenAIChat = document.getElementById("btnOpenAIChat");
+    var btnCloseAIChat = document.getElementById("btnCloseAIChat");
+    var aiChatWindow = document.getElementById("aiChatWindow");
+    var aiChatBody = document.getElementById("aiChatBody");
+    var aiChatInput = document.getElementById("aiChatInput");
+    var btnSendAIChat = document.getElementById("btnSendAIChat");
+    var chatStatusText = document.getElementById("chatStatusText");
+    
+    var chatSessionId = sessionStorage.getItem("NUTRIBOT_CHAT_SESSION_ID");
+    var chatCustomerName = sessionStorage.getItem("NUTRIBOT_CHAT_CUSTOMER_NAME") || "";
+    var chatPollInterval = null;
+    var isAITyping = false;
+
+    // Contact popover widget toggle
+    if (contactToggleBtn && contactPopover) {
+        contactToggleBtn.addEventListener("click", function(e) {
+            e.stopPropagation();
+            contactPopover.classList.toggle("d-none");
+            if (contactPopover.classList.contains("d-none")) {
+                contactToggleIcon.className = "fas fa-comments";
+            } else {
+                contactToggleIcon.className = "fas fa-times";
+            }
+        });
+    }
+    
+    // Close popover when clicking anywhere else
+    document.addEventListener("click", function(e) {
+        if (contactPopover && !contactPopover.classList.contains("d-none")) {
+            if (!contactPopover.contains(e.target) && !contactToggleBtn.contains(e.target)) {
+                contactPopover.classList.add("d-none");
+                if (contactToggleIcon) {
+                    contactToggleIcon.className = "fas fa-comments";
+                }
+            }
+        }
+    });
+    
+    // Toggle chat window open
+    if (btnOpenAIChat) {
+        btnOpenAIChat.addEventListener("click", function(e) {
+            if (e) e.preventDefault();
+            aiChatWindow.classList.remove("d-none");
+            
+            // Close the popover if it's open
+            if (contactPopover) {
+                contactPopover.classList.add("d-none");
+            }
+            if (contactToggleIcon) {
+                contactToggleIcon.className = "fas fa-comments";
+            }
+            
+            // Hide the toggle buttons while chat window is open
+            if (btnOpenAIChat) {
+                btnOpenAIChat.style.display = "none";
+            }
+            if (contactToggleBtn) {
+                contactToggleBtn.style.display = "none";
+            }
+            
+            // Initialize or load chat
+            if (!chatSessionId) {
+                startNewChatSession();
+            } else {
+                loadChatHistory();
+                startPolling();
+            }
+        });
+    }
+    
+    // Toggle chat window close
+    if (btnCloseAIChat) {
+        btnCloseAIChat.addEventListener("click", function() {
+            aiChatWindow.classList.add("d-none");
+            aiChatWindow.classList.remove("maximized");
+            
+            var maximizeIcon = document.getElementById("maximizeIcon");
+            if (maximizeIcon) {
+                maximizeIcon.className = "fas fa-expand-alt";
+            }
+            
+            if (btnOpenAIChat) {
+                btnOpenAIChat.style.display = "flex";
+            }
+            if (contactToggleBtn) {
+                contactToggleBtn.style.display = "flex";
+            }
+            stopPolling();
+        });
+    }
+    
+    // Maximize / minimize chat window
+    var btnMaximizeAIChat = document.getElementById("btnMaximizeAIChat");
+    if (btnMaximizeAIChat) {
+        btnMaximizeAIChat.addEventListener("click", function() {
+            if (aiChatWindow) {
+                aiChatWindow.classList.toggle("maximized");
+                var maximizeIcon = document.getElementById("maximizeIcon");
+                if (maximizeIcon) {
+                    if (aiChatWindow.classList.contains("maximized")) {
+                        maximizeIcon.className = "fas fa-compress-alt";
+                    } else {
+                        maximizeIcon.className = "fas fa-expand-alt";
+                    }
+                }
+            }
+        });
+    }
+    
+    function startPolling() {
+        stopPolling();
+        chatPollInterval = setInterval(loadChatHistory, 2500);
+    }
+    
+    function stopPolling() {
+        if (chatPollInterval) {
+            clearInterval(chatPollInterval);
+            chatPollInterval = null;
+        }
+    }
+    
+    // Start a new chat session via AJAX
+    function startNewChatSession() {
+        // Display loading or typing indicator first
+        aiChatBody.innerHTML = '<div class="chat-msg-row align-self-start"><div class="typing-indicator"><div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div></div></div>';
+        
+        // Fetch customer name if logged in
+        var url = "CustomerChatController?subAction=createCustomerSession";
+        fetch(url, { method: 'POST' })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    chatSessionId = data.sessionId;
+                    chatCustomerName = data.customerName;
+                    sessionStorage.setItem("NUTRIBOT_CHAT_SESSION_ID", chatSessionId);
+                    sessionStorage.setItem("NUTRIBOT_CHAT_CUSTOMER_NAME", chatCustomerName);
+                    
+                    loadChatHistory();
+                    startPolling();
+                } else {
+                    aiChatBody.innerHTML = '<div class="chat-bubble-system">Lỗi khởi động chat: ' + data.error + '</div>';
+                }
+            })
+            .catch(err => {
+                aiChatBody.innerHTML = '<div class="chat-bubble-system">Không kết nối được máy chủ chat.</div>';
+            });
+    }
+    
+    // Load message history from server
+    function loadChatHistory() {
+        if (!chatSessionId) return;
+        
+        var url = "CustomerChatController?subAction=getMessages&sessionId=" + chatSessionId;
+        fetch(url)
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    renderChatMessages(data.messages);
+                    updateChatStatus(data.status, data.staffName);
+                }
+            })
+            .catch(err => console.error("Error loading chat:", err));
+    }
+    
+    // Update header subtitle based on session status
+    function updateChatStatus(status, staffName) {
+        if (status === 'WAITING_STAFF') {
+            chatStatusText.innerText = "Đang kết nối nhân viên...";
+            chatStatusText.style.color = "#ffc107";
+        } else if (status === 'CONNECTED') {
+            chatStatusText.innerText = "Trò chuyện với: " + (staffName || "Chuyên viên");
+            chatStatusText.style.color = "#00e676";
+        } else if (status === 'ACTIVE') {
+            chatStatusText.innerText = "Tự động trả lời 24/7";
+            chatStatusText.style.color = "rgba(255, 255, 255, 0.75)";
+        } else if (status === 'CLOSED') {
+            chatStatusText.innerText = "Cuộc trò chuyện đã đóng";
+            chatStatusText.style.color = "rgba(255, 255, 255, 0.4)";
+        }
+    }
+    
+    function renderChatMessages(messages) {
+        var html = "";
+        var displayMessages = messages;
+        
+        if (isAITyping) {
+            // Find the index of the last CUSTOMER message in the messages list
+            var lastCustomerIndex = -1;
+            for (var i = messages.length - 1; i >= 0; i--) {
+                if (messages[i].senderType === 'CUSTOMER') {
+                    lastCustomerIndex = i;
+                    break;
+                }
+            }
+            
+            // Filter out any AI messages that appear after the last CUSTOMER message
+            if (lastCustomerIndex !== -1) {
+                displayMessages = messages.filter(function(m, idx) {
+                    if (idx > lastCustomerIndex && m.senderType === 'AI') {
+                        return false;
+                    }
+                    return true;
+                });
+            }
+        }
+        
+        displayMessages.forEach(function(m) {
+            if (m.messageText.startsWith("[Hệ thống]")) {
+                html += '<div class="chat-bubble-system">' + m.messageText + '</div>';
+            } else {
+                var isMe = (m.senderType === 'CUSTOMER');
+                var rowClass = isMe ? 'align-self-end' : 'align-self-start';
+                var labelText = isMe ? m.senderName : (m.senderType === 'AI' ? 'NutriBot AI' : m.senderName);
+                var bubbleClass = isMe ? 'chat-bubble-customer' : (m.senderType === 'AI' ? 'chat-bubble-ai' : 'chat-bubble-staff');
+                
+                html += '<div class="chat-msg-row ' + rowClass + '">'
+                      + '<span class="chat-msg-label">' + labelText + '</span>'
+                      + '<div class="chat-msg-bubble ' + bubbleClass + '">' + m.messageText + '</div>'
+                      + '</div>';
+            }
+        });
+        
+        // Append simulated typing indicator if AI is currently typing/thinking
+        if (isAITyping) {
+            html += '<div id="tempLoadingRow" class="chat-msg-row align-self-start">'
+                  + '<span class="chat-msg-label">NutriBot AI</span>'
+                  + '<div class="typing-indicator"><div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div></div>'
+                  + '</div>';
+        }
+        
+        var isScrolledToBottom = aiChatBody.scrollHeight - aiChatBody.clientHeight <= aiChatBody.scrollTop + 50;
+        aiChatBody.innerHTML = html;
+        
+        if (isScrolledToBottom) {
+            aiChatBody.scrollTop = aiChatBody.scrollHeight;
+        }
+    }
+    
+    // Send customer message to server
+    function sendCustomerChatMessage() {
+        var text = aiChatInput.value.trim();
+        if (!text || !chatSessionId) return;
+        
+        var sendTime = Date.now();
+        isAITyping = true;
+        
+        // Disable input during AI response generation to prevent spam
+        aiChatInput.disabled = true;
+        if (btnSendAIChat) btnSendAIChat.disabled = true;
+        aiChatInput.value = "";
+        
+        // Append client message immediately for snappy feel
+        var tempHtml = aiChatBody.innerHTML;
+        tempHtml += '<div class="chat-msg-row align-self-end">'
+                  + '<span class="chat-msg-label">' + chatCustomerName + '</span>'
+                  + '<div class="chat-msg-bubble chat-bubble-customer">' + text + '</div>'
+                  + '</div>';
+                  
+        // Also add typing indicator to wait for AI response
+        tempHtml += '<div id="tempLoadingRow" class="chat-msg-row align-self-start">'
+                  + '<span class="chat-msg-label">NutriBot AI</span>'
+                  + '<div class="typing-indicator"><div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div></div>'
+                  + '</div>';
+                  
+        aiChatBody.innerHTML = tempHtml;
+        aiChatBody.scrollTop = aiChatBody.scrollHeight;
+        
+        // Send request
+        var url = "CustomerChatController?subAction=sendCustomerMessage&sessionId=" + chatSessionId 
+                + "&messageText=" + encodeURIComponent(text) + "&customerName=" + encodeURIComponent(chatCustomerName);
+        
+        fetch(url, { method: 'POST' })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    var elapsed = Date.now() - sendTime;
+                    var remaining = 1500 - elapsed;
+                    if (remaining < 0) remaining = 0;
+                    
+                    setTimeout(function() {
+                        isAITyping = false;
+                        aiChatInput.disabled = false;
+                        if (btnSendAIChat) btnSendAIChat.disabled = false;
+                        aiChatInput.focus();
+                        loadChatHistory();
+                    }, remaining);
+                } else {
+                    isAITyping = false;
+                    aiChatInput.disabled = false;
+                    if (btnSendAIChat) btnSendAIChat.disabled = false;
+                    aiChatInput.focus();
+                    loadChatHistory();
+                }
+            })
+            .catch(err => {
+                isAITyping = false;
+                aiChatInput.disabled = false;
+                if (btnSendAIChat) btnSendAIChat.disabled = false;
+                aiChatInput.focus();
+                var loader = document.getElementById("tempLoadingRow");
+                if (loader) loader.outerHTML = '<div class="chat-bubble-system">Không gửi được tin nhắn. Hãy kiểm tra kết nối.</div>';
+            });
+    }
+    
+    if (btnSendAIChat) {
+        btnSendAIChat.addEventListener("click", sendCustomerChatMessage);
+    }
+    if (aiChatInput) {
+        aiChatInput.addEventListener("keydown", function(e) {
+            if (e.key === "Enter") {
+                sendCustomerChatMessage();
+            }
+        });
+    }
+});
+</script>
+
+<%-- Global Toast Notification --%>
+<c:if test="${not empty requestScope.MESSAGE}">
+    <div class="custom-toast success-toast" id="globalToast">
+        <div class="toast-icon"><i class="fas fa-check-circle"></i></div>
+        <div class="toast-content">
+            <div class="toast-title">Thành công</div>
+            <div class="toast-text">${requestScope.MESSAGE}</div>
+        </div>
+        <button class="toast-close" onclick="closeGlobalToast()">&times;</button>
+    </div>
+</c:if>
+<c:if test="${not empty requestScope.ERROR_MESSAGE}">
+    <div class="custom-toast error-toast" id="globalToast">
+        <div class="toast-icon"><i class="fas fa-exclamation-circle"></i></div>
+        <div class="toast-content">
+            <div class="toast-title">Thất bại</div>
+            <div class="toast-text">${requestScope.ERROR_MESSAGE}</div>
+        </div>
+        <button class="toast-close" onclick="closeGlobalToast()">&times;</button>
+    </div>
+</c:if>
+<c:if test="${not empty requestScope.ERROR}">
+    <div class="custom-toast error-toast" id="globalToast">
+        <div class="toast-icon"><i class="fas fa-exclamation-circle"></i></div>
+        <div class="toast-content">
+            <div class="toast-title">Thất bại</div>
+            <div class="toast-text">${requestScope.ERROR}</div>
+        </div>
+        <button class="toast-close" onclick="closeGlobalToast()">&times;</button>
+    </div>
+</c:if>
+
+<style>
+.custom-toast {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    z-index: 10000000;
+    min-width: 320px;
+    max-width: 450px;
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    animation: toastSlideIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), toastFadeOut 0.4s ease 4.6s forwards;
+    border-left: 5px solid #00e676;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.custom-toast.error-toast {
+    border-left-color: #ef4444;
+}
+
+@keyframes toastSlideIn {
+    from { transform: translateX(120%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes toastFadeOut {
+    from { transform: translateX(0); opacity: 1; }
+    to { transform: translateX(120%); opacity: 0; }
+}
+
+.toast-icon {
+    font-size: 1.5rem;
+    color: #00e676;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error-toast .toast-icon {
+    color: #ef4444;
+}
+
+.toast-content {
+    flex-grow: 1;
+}
+
+.toast-title {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.toast-text {
+    font-size: 0.82rem;
+    color: #cbd5e1;
+    line-height: 1.4;
+}
+
+.toast-close {
+    background: transparent;
+    border: none;
+    color: #94a3b8;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    transition: color 0.2s;
+}
+
+.toast-close:hover {
+    color: #ffffff;
+}
+</style>
+
+<script>
+function closeGlobalToast() {
+    var toast = document.getElementById("globalToast");
+    if (toast) {
+        toast.style.animation = "toastFadeOut 0.4s ease forwards";
+        setTimeout(function() {
+            toast.remove();
+        }, 400);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    var toast = document.getElementById("globalToast");
+    if (toast) {
+        setTimeout(function() {
+            if (toast) {
+                toast.style.animation = "toastFadeOut 0.4s ease forwards";
+                setTimeout(function() {
+                    toast.remove();
+                }, 400);
+            }
+        }, 4600);
+    }
+});
+</script>

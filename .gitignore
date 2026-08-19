@@ -1,0 +1,9 @@
+build/
+dist/
+nbproject/private/
+*.class
+*.log
+scratch/
+cookies.txt
+find_articles.ps1
+test_enc.ps1
