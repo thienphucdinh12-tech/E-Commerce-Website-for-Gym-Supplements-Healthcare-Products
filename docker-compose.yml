@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  # ------------------------------------------------------------
+  # Service 1: Microsoft SQL Server 2022 Database
+  # ------------------------------------------------------------
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: nutrioverflow-db
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=YourPassword123!
+    ports:
+      - "1433:1433"
+    volumes:
+      - ./Database/full_database_nutrioverflow.sql:/docker-entrypoint-initdb.d/full_database_nutrioverflow.sql:ro
+      - ./docker/entrypoint-db.sh:/usr/src/app/entrypoint-db.sh:ro
+    entrypoint: ["/bin/bash", "/usr/src/app/entrypoint-db.sh"]
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P YourPassword123! -C -Q 'SELECT 1' || exit 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+      start_period: 15s
+
+  # ------------------------------------------------------------
+  # Service 2: Tomcat 9 Web Server (Website & Admin Applications)
+  # ------------------------------------------------------------
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nutrioverflow-web
+    ports:
+      - "8080:8080"
+    environment:
+      - DB_HOST=sqlserver
+      - DB_PORT=1433
+      - DB_NAME=NutriOverflow
+      - DB_USER=sa
+      - DB_PASSWORD=YourPassword123!
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+    restart: always
+
+networks:
+  default:
+    name: nutrioverflow-network

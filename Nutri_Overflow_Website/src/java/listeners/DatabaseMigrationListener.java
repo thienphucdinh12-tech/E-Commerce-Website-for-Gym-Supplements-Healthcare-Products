@@ -22,44 +22,12 @@ public class DatabaseMigrationListener implements ServletContextListener {
         String password = "12345";
 
         try {
-            // Đọc thông tin cấu hình động từ utils.DBUtils qua Reflection
-            // Cách này giúp nếu lập trình viên đổi mật khẩu hoặc IP ở DBUtils, Flyway sẽ tự động cập nhật theo.
-            Class<?> dbUtilsClass = Class.forName("utils.DBUtils");
-            
-            try {
-                Field dbHostField = dbUtilsClass.getDeclaredField("DB_HOST");
-                dbHostField.setAccessible(true);
-                dbHost = (String) dbHostField.get(null);
-            } catch (NoSuchFieldException e) {
-                System.out.println("Flyway: Field DB_HOST not found in DBUtils, using default: " + dbHost);
-            }
-
-            try {
-                Field dbNameField = dbUtilsClass.getDeclaredField("DB_NAME");
-                dbNameField.setAccessible(true);
-                dbName = (String) dbNameField.get(null);
-            } catch (NoSuchFieldException e) {
-                System.out.println("Flyway: Field DB_NAME not found in DBUtils, using default: " + dbName);
-            }
-
-            try {
-                Field userNameField = dbUtilsClass.getDeclaredField("USER_NAME");
-                userNameField.setAccessible(true);
-                userName = (String) userNameField.get(null);
-            } catch (NoSuchFieldException e) {
-                System.out.println("Flyway: Field USER_NAME not found in DBUtils, using default: " + userName);
-            }
-
-            try {
-                Field passwordField = dbUtilsClass.getDeclaredField("PASSWORD");
-                passwordField.setAccessible(true);
-                password = (String) passwordField.get(null);
-            } catch (NoSuchFieldException e) {
-                System.out.println("Flyway: Field PASSWORD not found in DBUtils, using default: ******");
-            }
-
-        } catch (Exception e) {
-            System.err.println("Flyway: Không thể đọc cấu hình từ DBUtils qua Reflection, sử dụng giá trị mặc định.");
+            dbHost = utils.DBUtils.getDbHost();
+            dbName = utils.DBUtils.getDbName();
+            userName = utils.DBUtils.getUserName();
+            password = utils.DBUtils.getPassword();
+        } catch (Throwable e) {
+            System.err.println("Flyway: Không thể đọc cấu hình từ DBUtils, sử dụng giá trị mặc định.");
         }
 
         try {
