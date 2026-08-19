@@ -73,7 +73,8 @@ public class DatabaseMigrationListener implements ServletContextListener {
                 .dataSource(url, userName, password)
                 .locations("classpath:db/migration")
                 .baselineOnMigrate(true) // Bật tính năng đánh mốc cho database đã có dữ liệu
-                .baselineVersion("3")   // Đặt mốc cơ sở ban đầu là Version 3
+                .baselineVersion("6")   // Đặt mốc cơ sở ban đầu là Version 6
+                .outOfOrder(true)
                 .load();
 
             // Tự động sửa chữa checksum nếu phát hiện sai lệch file migration cũ
